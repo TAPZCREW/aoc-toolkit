@@ -21,7 +21,7 @@ async def save_day(day: Day):
 
     if not isfile(day.script_filename):
         module_path = dirname(sys.modules["__main__"].__file__)
-        stub_filepath = join(module_path, "data/day.py.stub")
+        stub_filepath = join(module_path, "_data/script.py.stub")
         if not isfile(stub_filepath):
             logger.warning("Unable to find script stub %s", stub_filepath)
         else:

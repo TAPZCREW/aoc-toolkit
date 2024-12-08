@@ -1,0 +1,18 @@
+from typing import Any, Optional
+
+
+# Year    : TODO
+# Day     : TODO
+# Problem : TODO
+
+
+def parse_input(_input: str) -> Any:
+    return _input.splitlines()
+
+
+def solve_part_1(_input: Any) -> Optional[str | int]:
+    pass
+
+
+def solve_part_2(_input: Any) -> Optional[str | int]:
+    pass

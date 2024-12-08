@@ -1,0 +1,6 @@
+- Handle problem test inputs and outputs (see [aocd-example-parser](https://github.com/wimglenn/aocd-example-parser))
+- Use dependency injection for `AocService` and `httpx::AsyncClient`
+- Lazy-load problem input
+- Pass an async file-like argument to `parse_input` instead of the whole input as a `str`
+- Fetch new problem description after submitting part 1 answer (as an optional flag)
+- Add year, day and problem name as comments in generated `script.py`

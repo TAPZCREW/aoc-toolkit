@@ -1,0 +1,23 @@
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  default:
+    format: '%(asctime)s | %(levelname)s | %(module)s | %(message)s'
+    datefmt: '%Y-%m-%dT%H:%M:%S%z'
+
+handlers:
+  console:
+    level: INFO
+    class: logging.StreamHandler
+    formatter: default
+
+loggers:
+  httpx:
+    level: WARNING
+  httpcore:
+    level: WARNING
+
+root:
+  level: NOTSET
+  handlers: [console]
